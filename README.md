@@ -1,2 +1,2 @@
-# omnifood-app
+# omnifood
 Landing page for omnifood
