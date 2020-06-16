@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  color: rgb(65, 64, 65);
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 200%; /* relative font size */
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* probably won't be used in real world app */
+  word-spacing: 3px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* half its width to the left and half height to the top */
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block; /* a tag has display: inline style */
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px; /* round cornered button */
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s; /* add a transition over button state changes */
+}
+
+.btn-action:link,
+.btn-action:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: white;
+  font-weight: 300;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-action:hover,
+.btn-action:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: white;
+}
