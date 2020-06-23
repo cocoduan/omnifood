@@ -238,3 +238,38 @@ a:active {
   line-height: 120%;
   color: var(--main-dark-orange-color);
 }
+
+/* ---------------------------------*/
+/* Meals section */
+/* ---------------------------------*/
+.meals-showcase {
+  margin: 8px;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.meals-showcase li {
+  width: 25%;
+  padding: 4px;
+}
+
+.meal-image {
+  width: 100%;
+  overflow: hidden;
+  /* make opacity work */
+  background-color: black;
+}
+
+.meal-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.meal-image img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
