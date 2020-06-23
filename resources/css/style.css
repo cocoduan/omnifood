@@ -106,7 +106,8 @@ a:active {
 /* buttons styles */
 /* ---------------------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   /* a tag has display: inline style */
   padding: 10px 30px;
@@ -122,7 +123,8 @@ a:active {
 }
 
 .btn-action:link,
-.btn-action:visited {
+.btn-action:visited,
+input[type=submit] {
   background-color: var(--main-dark-orange-color);
   border: 1px solid var(--main-dark-orange-color);
   color: white;
@@ -136,7 +138,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: var(--main-orange-color);
 }
 
@@ -476,4 +480,41 @@ a:active {
 .plan-box-button {
   text-align: center;
   margin: 10px 0;
+}
+
+/* ---------------------------------*/
+/* Form section */
+/* ---------------------------------*/
+.section-form {
+  padding: 80px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: wrap;
+  width: 60%;
+}
+
+.contact-form .form-col-1 {
+  width: 33.33%;
+  padding: 8px;
+}
+
+.contact-form .form-col-2 {
+  width: 66.66%;
+  padding: 8px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
 }
