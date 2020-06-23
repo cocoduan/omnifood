@@ -303,8 +303,8 @@ input[type=submit]:active {
 
 .works-step {
   display: flex;
-  justify-content: space-evenly;
   /* distrubute along main axis */
+  justify-content: space-evenly;
   margin: 40px 0;
 }
 
@@ -326,8 +326,8 @@ input[type=submit]:active {
 }
 
 .works-step p {
-  width: 80%;
   /* must specify width in order to render correctly with flexbox */
+  width: 80%;
 }
 
 .works-step img {
@@ -368,8 +368,8 @@ input[type=submit]:active {
 
 .city-details {
   display: flex;
-  align-items: center;
   /* cross main axis */
+  align-items: center;
 }
 
 /* ---------------------------------*/
@@ -400,8 +400,8 @@ input[type=submit]:active {
   display: block;
   content: "\201C";
   font-size: 500%;
-  position: absolute;
   /* parent needs to be relative */
+  position: absolute;
   left: 8px;
   top: 16px;
 }
@@ -517,4 +517,94 @@ textarea {
 
 input[type=checkbox] {
   margin: 10px 5px 10px 0;
+}
+
+/* ---------------------------------*/
+/* Footer section */
+/* ---------------------------------*/
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-nav li,
+.social-links li {
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  color: #888;
+  text-decoration: none;
+  border: none;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 1.3em;
+}
+
+ion-icon[name=logo-twitter],
+ion-icon[name=logo-facebook],
+ion-icon[name=logo-google],
+ion-icon[name=logo-instagram],
+ion-icon[name=logo-pinterest] {
+  transition: color 0.2s;
+}
+
+ion-icon[name=logo-twitter]:hover {
+  color: #1da1f2;
+}
+
+ion-icon[name=logo-facebook]:hover {
+  color: #1877f2;
+}
+
+ion-icon[name=logo-google]:hover {
+  color: #fbbc05;
+}
+
+ion-icon[name=logo-instagram]:hover {
+  color: #c32aa3;
+}
+
+ion-icon[name=logo-pinterest]:hover {
+  color: #bd081c;
+}
+
+.copyright {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 100;
 }
