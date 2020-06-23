@@ -273,3 +273,65 @@ a:active {
   transform: scale(1);
   opacity: 1;
 }
+
+/* ---------------------------------*/
+/* Steps section */
+/* ---------------------------------*/
+.section-steps {
+  padding: 100px 0;
+  background-color: #eeeeee;
+}
+
+.step-box {
+  display: flex;
+  justify-content: space-evenly;
+  /* distrubute along main axis */
+}
+
+.step-box-item:first-child {
+  text-align: center;
+  /* works for inline-block elements like image */
+}
+
+.app-screen {
+  width: 50%;
+}
+
+.works-step {
+  display: flex;
+  justify-content: space-evenly;
+  /* distrubute along main axis */
+  margin: 40px 0;
+}
+
+.works-step:last-of-type {
+  /* select the last child */
+  margin-top: 80px;
+}
+
+.works-step-number {
+  color: var(--main-dark-orange-color);
+  border: 2px solid var(--main-dark-orange-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works-step p {
+  width: 80%;
+  /* must specify width in order to render correctly with flexbox */
+}
+
+.works-step img {
+  width: auto;
+  height: 50px;
+}
+
+.button-app:link,
+.button-app:visited {
+  border: 0;
+}
