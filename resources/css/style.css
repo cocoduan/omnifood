@@ -335,3 +335,35 @@ a:active {
 .button-app:visited {
   border: 0;
 }
+
+/* ---------------------------------*/
+/* Cities section */
+/* ---------------------------------*/
+.section-cities {
+  margin: 100px 0;
+}
+
+.cities-box {
+  /* flex container */
+  display: flex;
+  margin-top: 60px;
+}
+
+.city-box {
+  width: 25%;
+  /* 4 columns */
+  padding: 4px;
+}
+
+.city-box img {
+  width: 100%;
+  /* 100% width of its parent container */
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.city-details {
+  display: flex;
+  align-items: center;
+  /* cross main axis */
+}
