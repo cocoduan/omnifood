@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
   <!-- Place customized css at the bottom to account for any overrides -->
@@ -13,6 +12,15 @@
 
 <body>
   <header>
+    <nav class="nav-row row">
+      <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo" />
+      <ul class="main-nav">
+        <li class="main-nav-list-item"><a class="main-nav-link" href="#">Food delivery</a></li>
+        <li class="main-nav-list-item"><a class="main-nav-link" href="#">How it works</a></li>
+        <li class="main-nav-list-item"><a class="main-nav-link" href="#">Our cities</a></li>
+        <li class="main-nav-list-item"><a class="main-nav-link" href="#">Sign up</a></li>
+      </ul>
+    </nav>
     <div class="hero-text-box">
       <h1>Goodbye junk food.</h1>
       <h1>Hello super healthy meals.</h1>
@@ -20,6 +28,47 @@
       <a class="btn btn-ghost" href="#">Show me more</a>
     </div>
   </header>
+
+  <section class="section-features">
+    <div class="row">
+      <h2>Get food fast &mdash; not fast food</h2>
+      <p class="long-copy">
+        Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+      </p>
+    </div>
+    <div class="feature-list row">
+      <div class="feature-list-item">
+        <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
+        <h3>Up to 365 days/year</h3>
+        <p class="textbox">
+          Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+        </p>
+      </div>
+      <div class="feature-list-item">
+        <ion-icon class="icon-big" name="stopwatch-outline"></ion-icon>
+        <h3>Ready in 20 minutes</h3>
+        <p class="textbox">
+          You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+        </p>
+      </div>
+      <div class="feature-list-item">
+        <ion-icon class="icon-big" name="rose-outline"></ion-icon>
+        <h3>100% organic</h3>
+        <p class="textbox">
+          All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+        </p>
+      </div>
+      <div class="feature-list-item">
+        <ion-icon class="icon-big" name="cart-outline"></ion-icon>
+        <h3>Order anything</h3>
+        <p class="textbox">
+          We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 
 </html>

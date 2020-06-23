@@ -1,3 +1,8 @@
+:root {
+  --main-dark-orange-color: #e67e22;
+  --main-orange-color: #cf6d17;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,22 +23,55 @@ html {
   margin: 0 auto;
 }
 
+/* ---------------------------------*/
+/* header styles */
+/* ---------------------------------*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 h1 {
   margin: 0;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 200%; /* relative font size */
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px; /* probably won't be used in real world app */
-  word-spacing: 3px;
+  /* relative font size */
+  font-size: 200%;
+  /* probably won't be used in real world app */
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  /* relative font size */
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2::after {
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-dark-orange-color);
+  /* Note: not color but background-color */
+  content: '';
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 .hero-text-box {
@@ -41,48 +79,162 @@ h1 {
   width: 1140px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* half its width to the left and half height to the top */
+  transform: translate(-50%, -50%);
+  /* half its width to the left and half height to the top */
 }
 
+/* ---------------------------------*/
+/* link styles */
+/* ---------------------------------*/
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--main-dark-orange-color);
+  border-bottom: 1px solid var(--main-dark-orange-color);
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  /* cleaner to keep this line, as opposed to colored border in other states */
+  border-bottom: 1px solid transparent;
+}
+
+/* ---------------------------------*/
+/* buttons styles */
+/* ---------------------------------*/
 .btn:link,
 .btn:visited {
-  display: inline-block; /* a tag has display: inline style */
+  display: inline-block;
+  /* a tag has display: inline style */
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  border-radius: 200px; /* round cornered button */
+  border-radius: 200px;
+  /* round cornered button */
   width: 200px;
   text-align: center;
   margin: 10px;
-  transition: background-color 0.3s, border 0.3s, color 0.3s; /* add a transition over button state changes */
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  /* add a transition over button state changes */
 }
 
 .btn-action:link,
 .btn-action:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
+  background-color: var(--main-dark-orange-color);
+  border: 1px solid var(--main-dark-orange-color);
   color: white;
   font-weight: 300;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22;
+  border: 1px solid var(--main-dark-orange-color);
+  color: var(--main-dark-orange-color);
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #cf6d17;
+  background-color: var(--main-orange-color);
 }
 
 .btn-action:hover,
 .btn-action:active {
-  border: 1px solid #cf6d17;
+  border: 1px solid var(--main-orange-color);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #cf6d17;
+  border: 1px solid var(--main-orange-color);
   color: white;
+}
+
+/* ---------------------------------*/
+/* Nav styles */
+/* ---------------------------------*/
+.nav-row {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  /* vertically center */
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.main-nav {
+  margin-left: auto;
+  /* make nav bar float to right in the flexbox way */
+  list-style: none;
+}
+
+.main-nav-list-item {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  padding-bottom: 8px;
+  text-decoration: none;
+  font-size: 0.9em;
+  /* relative font size */
+  color: white;
+  border-bottom: 2px solid transparent;
+  /* otherwise the border flickers on appearing */
+  transition: border-bottom 0.2s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  border-bottom: 2px solid var(--main-dark-orange-color);
+}
+
+/* ---------------------------------*/
+/* Features section */
+/* ---------------------------------*/
+.section-features {
+  margin: 100px 0;
+}
+
+.feature-list {
+  display: flex;
+  margin: 20px auto;
+}
+
+.feature-list-item {
+  padding: 1%;
+}
+
+/* ---------------------------------*/
+/* Paragraph styles */
+/* ---------------------------------*/
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  /* so the text is still centered */
+  margin-bottom: 32px;
+}
+
+.textbox {
+  font-size: 0.9em;
+  line-height: 145%;
+}
+
+/* Icon styles*/
+.icon-big {
+  font-size: 3.5em;
+  color: var(--main-dark-orange-color);
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  margin-right: 12px;
+  line-height: 120%;
+  color: var(--main-dark-orange-color);
 }
