@@ -367,3 +367,50 @@ a:active {
   align-items: center;
   /* cross main axis */
 }
+
+/* ---------------------------------*/
+/* Customers section */
+/* ---------------------------------*/
+.success-story-section {
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.success-story-box {
+  display: flex;
+}
+
+.success-story {
+  width: 33.333%;
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.success-story:before {
+  display: block;
+  content: "\201C";
+  font-size: 500%;
+  position: absolute;
+  /* parent needs to be relative */
+  left: 8px;
+  top: 16px;
+}
+
+.success-story cite {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.success-story cite img {
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 10px;
+}
