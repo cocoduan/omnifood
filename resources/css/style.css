@@ -176,6 +176,13 @@ input[type=submit]:active {
   width: auto;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  margin: 5px auto;
+}
+
 .main-nav {
   margin-left: auto;
   /* make nav bar float to right in the flexbox way */
@@ -202,6 +209,37 @@ input[type=submit]:active {
 .main-nav-link:hover,
 .main-nav-link:active {
   border-bottom: 2px solid var(--main-dark-orange-color);
+}
+
+/* sticky nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 2px #e3e3e3;
+  /* make sure nav will stay on top when scrolling */
+  z-index: 2;
+}
+
+.sticky .nav-row {
+  padding-top: 0;
+}
+
+.sticky .main-nav-link:link,
+.sticky .main-nav-link:visited {
+  padding: 18px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
+  margin: 5px 0;
 }
 
 /* ---------------------------------*/
