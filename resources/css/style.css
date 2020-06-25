@@ -220,7 +220,7 @@ input[type=submit]:active {
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 2px #e3e3e3;
   /* make sure nav will stay on top when scrolling */
-  z-index: 2;
+  z-index: 9999;
 }
 
 .sticky .nav-row {
@@ -640,4 +640,24 @@ ion-icon[name=logo-pinterest]:hover {
   text-align: center;
   margin-top: 20px;
   font-weight: 100;
+}
+
+/* ---------------------------------*/
+/* Animations */
+/* ---------------------------------*/
+.js--feature-list,
+.js--city-list,
+.js--phone-image {
+  opacity: 0;
+  animation-duration: 0.7s;
+}
+
+.js--plan-first {
+  animation-duration: 1s;
+}
+
+.js--feature-list.animate__animated,
+.js--city-list.animate__animated,
+.js--phone-image.animate__animated {
+  opacity: 1;
 }

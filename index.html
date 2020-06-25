@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <!-- Place customized css at the bottom to account for any overrides -->
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
@@ -20,29 +21,29 @@
         <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo" />
         <img src="resources/img/logo.png" alt="Omnifood logo black" class="logo-black" />
         <ul class="main-nav">
-          <li class="main-nav-list-item"><a class="main-nav-link" href="#">Food delivery</a></li>
-          <li class="main-nav-list-item"><a class="main-nav-link" href="#">How it works</a></li>
-          <li class="main-nav-list-item"><a class="main-nav-link" href="#">Our cities</a></li>
-          <li class="main-nav-list-item"><a class="main-nav-link" href="#">Sign up</a></li>
+          <li class="main-nav-list-item"><a class="main-nav-link" href="#features">Food delivery</a></li>
+          <li class="main-nav-list-item"><a class="main-nav-link" href="#works">How it works</a></li>
+          <li class="main-nav-list-item"><a class="main-nav-link" href="#cities">Our cities</a></li>
+          <li class="main-nav-list-item"><a class="main-nav-link" href="#plans">Sign up</a></li>
         </ul>
       </div>
     </nav>
     <div class="hero-text-box">
       <h1>Goodbye junk food.</h1>
       <h1>Hello super healthy meals.</h1>
-      <a class="btn btn-action" href="#">I’m hungry</a>
-      <a class="btn btn-ghost" href="#">Show me more</a>
+      <a class="btn btn-action js-scroll-to-plans" href="#">I'm hungry</a>
+      <a class="btn btn-ghost js-scroll-to-features" href="#">Show me more</a>
     </div>
   </header>
 
-  <section class="section-space">
+  <section class="section-space js--section-features" id="features">
     <div class="row">
       <h2>Get food fast &mdash; not fast food</h2>
       <p class="long-copy">
-        Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+        Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
       </p>
     </div>
-    <div class="feature-list row">
+    <div class="feature-list row js--feature-list">
       <div class="feature-list-item">
         <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
         <h3>Up to 365 days/year</h3>
@@ -119,12 +120,12 @@
     </ul>
   </section>
 
-  <section class="section-steps section-space">
+  <section class="section-steps section-space" id="works">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
     <div class="step-box row">
-      <div class="step-box-item">
+      <div class="step-box-item js--phone-image">
         <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
       </div>
       <div class="step-box-item">
@@ -148,11 +149,11 @@
     </div>
   </section>
 
-  <section class="section-space">
+  <section class="section-space" id="cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
-    <div class="cities-box row">
+    <div class="cities-box row js--city-list">
       <div class="city-box">
         <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
         <h3>Lisbon</h3>
@@ -243,12 +244,12 @@
     </div>
   </section>
 
-  <section class="plans-section section-space">
+  <section class="plans-section js-plans-section section-space" id="plans">
     <div class="row">
       <h2>Start eating healthy today</h2>
     </div>
     <div class="plan-container row">
-      <div class="plan-box">
+      <div class="plan-box js--plan-first">
         <div class="plan-box-row">
           <h3>Premium</h3>
           <p class="plan-price-month">$399 <span> / month</span></p>
@@ -406,6 +407,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="resources/js/script.js">
 
   </script>
