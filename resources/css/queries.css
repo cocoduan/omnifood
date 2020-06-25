@@ -8,6 +8,10 @@
   .row {
     padding: 0 2%;
   }
+
+  .nav-row {
+    padding-top: 10px;
+  }
 }
 
 /* Small tablet to big tablet: from 768px to 1023, ipad landscape view is 1024px */
@@ -68,13 +72,49 @@
     font-size: 16px;
   }
 
+  .mobile-nav {
+    display: block;
+  }
+
   .section-space {
     padding: 30px 0;
+  }
+
+  .nav-row {
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    display: none;
+    margin: 10px 0 0;
+  }
+
+  .main-nav-list-item {
+    display: block;
+    padding: 5px 0;
+    font-size: 1.1em;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    border: 0;
   }
 
   .hero-text-box,
   .row {
     padding: 0 4%;
+  }
+
+  .nav-row {
+    padding-top: 8px;
+  }
+
+  .sticky .mobile-nav ion-icon{
+    color: #000;
+  }
+
+  .mobile-nav .icon-hidden {
+    display: none;
   }
 
   .feature-list,

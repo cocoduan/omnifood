@@ -16,6 +16,8 @@ $(document).ready(function() {
   clickOnNav();
 
   animateOnScroll();
+
+  clickOnMobileMenu();
 });
 
 function scrollOnHeaderBtnClick() {
@@ -100,5 +102,22 @@ function animateOnScroll() {
     $('.js--plan-first').addClass('animate__animated animate__pulse');
   }, {
     offset: '50%'
+  });
+}
+
+function clickOnMobileMenu() {
+  $('.js--mobile-menu').click(function() {
+    const mainNav = $('.js--main-nav');
+    mainNav.slideToggle(200);
+
+    /* toggle the menu icon */
+    if ($('.js--menu-outline').hasClass('icon-hidden')) {
+      $('.js--menu-outline').removeClass('icon-hidden');
+      $('.js--close-outline').addClass('icon-hidden');
+    } else {
+      $('.js--menu-outline').addClass('icon-hidden');
+      $('.js--close-outline').removeClass('icon-hidden');
+    }
+
   });
 }
