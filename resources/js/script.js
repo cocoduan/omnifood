@@ -1,4 +1,18 @@
 $(document).ready(function() {
+  toggleNavigationMenu();
+
+  /* scroll to section on header button click */
+  scrollOnHeaderBtnClick()
+
+  /* scroll to section when nav item is clicked */
+  clickOnNav();
+
+  animateOnScroll();
+
+  clickOnMobileMenu();
+});
+
+function toggleNavigationMenu() {
   /* add / remove sticky class */
   $('.js--section-features').waypoint(function(direction) {
     if (direction === "down") {
@@ -9,17 +23,12 @@ $(document).ready(function() {
   }, {
     offset: '60px'
   })
+}
 
-  /* scroll on button click */
-  scrollOnHeaderBtnClick()
-
-  clickOnNav();
-
-  animateOnScroll();
-
-  clickOnMobileMenu();
-});
-
+/**
+ * scrollOnHeaderBtnClick - scroll to the linked section on header button click
+ * @return
+ */
 function scrollOnHeaderBtnClick() {
   $('.js-scroll-to-plans').click(function() {
     $('html, body').animate({
@@ -76,6 +85,10 @@ function clickOnNav() {
     });
 }
 
+/**
+ * Animate the rendering effect for various parts
+ * @return
+ */
 function animateOnScroll() {
   /* feature list items fade in */
   $('.js--feature-list').waypoint(function() {
@@ -83,7 +96,7 @@ function animateOnScroll() {
   }, {
     offset: '50%'
   });
-
+  /* city list items fade in */
   $('.js--city-list').waypoint(function() {
     $('.js--city-list').addClass('animate__animated animate__fadeIn');
   }, {
@@ -105,12 +118,17 @@ function animateOnScroll() {
   });
 }
 
+/**
+ * Click handler for the mobile menu icon
+ * @return
+ */
 function clickOnMobileMenu() {
+  /* toggle the mobile nav menu */
   $('.js--mobile-menu').click(function() {
     const mainNav = $('.js--main-nav');
     mainNav.slideToggle(200);
 
-    /* toggle the menu icon */
+    /* toggle the mobile menu icon */
     if ($('.js--menu-outline').hasClass('icon-hidden')) {
       $('.js--menu-outline').removeClass('icon-hidden');
       $('.js--close-outline').addClass('icon-hidden');
